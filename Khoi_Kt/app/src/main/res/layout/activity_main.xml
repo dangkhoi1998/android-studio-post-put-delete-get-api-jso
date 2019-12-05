@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#47535E"
+    tools:context="MainActivity">
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Mã máy tính"
+        android:textColor="#fff"
+        android:textColorHint="#EAF0F1"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#EAF0F1"
+        android:textColor="#fff"
+        android:layout_below="@id/editText_id"
+        android:hint="Tên máy tính" />
+    <EditText
+        android:id="@+id/editText_hang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#EAF0F1"
+        android:textColor="#fff"
+        android:layout_below="@id/editText_name"
+        android:hint="Hãng sản xuất" />
+    <EditText
+        android:id="@+id/editText_nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_hang"
+        android:hint="Năm sản xuất"
+        android:textColor="#fff"
+        android:textColorHint="#EAF0F1"
+        android:layout_marginBottom="20dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_hdh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_nam"
+        android:hint="Hệ điều hành"
+        android:textColor="#fff"
+        android:textColorHint="#EAF0F1" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_hdh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#3498DB"
+        android:layout_marginBottom="2dp"
+        android:textColor="#fff"
+        android:text="Them" />
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/button_delete"
+        android:layout_centerHorizontal="true"
+        android:background="#E74292"
+        android:text="Hien Thi" />
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_view"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:background="#F3B431"
+        android:layout_marginBottom="2dp"
+        android:text="Sua" />
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_update"
+        android:textColor="#fff"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="#E44236"
+        android:text="Xoa" />
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:background="#10A881"
+        android:layout_marginBottom="2dp"
+        android:text="View" />1
+</LinearLayout>
